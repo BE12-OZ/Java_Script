@@ -81,7 +81,6 @@ input[type="checkbox"] {
     box-sizing: border-box;
 }
 
-/* 라디오/체크박스 옆 레이블 스타일 초기화 및 정렬 */
 input[type="radio"] + label,
 input[type="checkbox"] + label {
     margin-right: 0;
