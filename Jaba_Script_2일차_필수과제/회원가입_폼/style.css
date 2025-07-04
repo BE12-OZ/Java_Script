@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #007bff;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    margin-top: 15px; /* 각 필드 위 간격 */
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 15px; /* 항목 간 간격 조정 */
+    margin-bottom: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle; /* 중앙 정렬 */
+    height: 1em; /* 텍스트 크기에 맞춰 높이 설정 */
+    width: 1em; /* 텍스트 크기에 맞춰 너비 설정 */
+    box-sizing: border-box;
+}
+
+/* 라디오/체크박스 옆 레이블 스타일 초기화 및 정렬 */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-right: 0;
+    margin-top: 0; /* 상단 정렬 */
+    display: inline-block; /* 속성 해제 */
+    cursor: pointer;
+    vertical-align: middle; /* 중앙 정렬 */
+    line-height: 1em; /* 텍스트 크기에 맞춰 줄 높이 설정 */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}

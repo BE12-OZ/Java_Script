@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>몬스터 헌터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>몬스터 헌터</h1>
+        <button id="start-game-btn">GAME START</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+        <div id="monster-section">
+            <h2>몬스터</h2>
+            <div id="monster-stats">
+                <p>HP: <span id="monster-hp">100</span></p>
+            </div>
+        </div>
+        <div id="player-section">
+            <h2>플레이어</h2>
+            <div id="player-stats">
+                <p>HP: <span id="player-hp">100</span></p>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="attack-btn">공격</button>
+            <button id="skill-btn">궁극기</button>
+            <button id="run-btn">빤쓰런</button>
+        </div>
+        <div id="skill-menu" class="hidden">
+            <button class="skill" data-skill="strongAttack">마동석 소환</button>
+            <button class="skill" data-skill="heal">회복</button>
+        </div>
+        <div id="log">
+            <p>GAME START</p>
+        </div>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h2 id="game-over-message"></h2>
+        <button id="restart-game-btn">GAME RESTART</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
